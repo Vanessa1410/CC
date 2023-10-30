@@ -296,7 +296,7 @@ tr.event-row {
                 <li><a href="calendar.php"><i class="fa-regular fa-calendar-days"></i></i><span>Calendar</span></a></li>
                 <li><a href="aboutus.php"><i class="fa-solid fa-user-group"></i><span>About us</span></a></li>
                 <li><a href="contactus.php"><i class="fa-solid fa-globe"></i><span>Contact us</span></a></li>
-                <li><a href="reg.php"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
+                <li><a href="signup.php"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
 
                 <!-- <li><a href="#"><img src="images/"><span>Home</span></a></li> -->
 
