@@ -1,0 +1,101 @@
+/* Reset some default styles */
+/* body, h1, h2, form {
+    margin: 50px;
+    padding: 30px;
+} */
+
+/* Style the body */
+body {
+   
+    background-color: #57B894; /* Green color */
+    /* margin: 55px;
+    padding: 80px; */
+    /* text-align: center; */
+
+}
+
+/* Style the h1 */
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Style the input boxes with shadows */
+input[type="text"],
+input[type="date"],
+textarea {
+    width: 87%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+/* Style the file input */
+input[type="file"] {
+    margin-top: 5px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color:  #57B894; /* Green color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color:  #57B894; /* Darker green on hover */
+}
+
+/* Style the "Choose File" button with shadows */
+input[type="file"] {
+    background-color: #57B894; /* Green color */
+    color: #fff;
+    border: none;
+    padding: 9px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a shadow */
+}
+
+input[type="file"]:hover {
+    background-color: #57B894; /* Darker green on hover */
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff; /* Set the background color for the entire table to white */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Set the background color for event rows to white */
+tr.event-row {
+    background-color: #fff;
+}

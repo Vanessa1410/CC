@@ -1,0 +1,27 @@
+
+
+<!-- Shared posts will be dynamically added here -->
+<section>
+            
+            <div class="container" style="padding-left: 16%;">
+            <div class="row">
+                <?php
+                if($samplengos){
+                    foreach ($samplengos as $row) {
+                        echo '<div class="col-md-3 col-sm-6">
+                                <div class="card card-block" style="padding(40px,30px,30px,26px)">
+                                    <h4 class="card-title text-right"><i class="material-icons">' . $row['Orgname'] . '</i></h4>
+                                    <img src="https://static.pexels.com/photos/7096/people-woman-coffee-meeting.jpg" alt="Photo of sunset">
+                                    <h5 class="card-title mt-3 mb-3">' . $row['City'] . '</h5>
+                                    <p class="card-text">' . $row['Description'] . '</p>
+                                    <p class="card-text">' . $row['Contact'] . '</p>
+                                </div>
+                            </div>';
+                    }
+                }
+                ?>
+        </div> 
+            </div>
+        </section>
+
+<!-- ends here -->
