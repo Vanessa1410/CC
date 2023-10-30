@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+  <h1 class="section-title"><span class="highlight">C</span>onnect. <span class="highlight">C</span>ollaborate. <span class="highlight">C</span>hange.</h1>
+    <!-- Register on <span class="highlight">Community Connect</span> -->
+  <p class="sub-heading">Ready to make a difference? Choose your role: </p>
+<section class="forms-section">
+    <div class="forms">
+      <div class="form-wrapper is-active">
+        <button type="button" class="switcher switcher-login">
+          Volunteer
+          <span class="underline"></span>
+        </button>
+        <form class="form form-login">
+          <fieldset>
+            <legend>Please, enter your email and password for login.</legend>
+            <div class="column-container">
+              <!-- Column 1 -->
+              <div class="column1">
+                      <div class="input-block">
+                      <label for="vsignup-fname">First name<span class="required">*</span></label>
+                      <input id="vsignup-fname" type="text" required>
+                      <div class="validation-message" id="vfname-validation-message"></div>
+                      </div>
+                      <div class="input-block">
+                          <label for="vsignup-lname">Last name<span class="required">*</span></label>
+                          <input id="vsignup-lname" type="text" required>
+                          <div class="validation-message" id="vlname-validation-message"></div>
+                      </div>
+                  </div>
+                  <!-- Column 2 -->
+              <div class="column2">
+                  <div class="input-block">
+                    <label for="vsignup-age">Age<span class="required">*</span></label>
+                    <input id="vsignup-age" type="text" required>
+                    <div class="validation-message" id="vage-validation-message"></div>
+                  </div>
+                  <div class="gender-container">
+                    <label class="gender-label" for="gender">Gender<span class="required">*</span></label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                  </div>
+                    <div class="input-block">
+                        <label for="signup-vcity">City<span class="required">*</span></label>
+                        <input id="signup-vcity" type="text" required>
+                        <div class="validation-message" id="vcity-validation-message"></div>
+                    </div>
+              </div>
+              <!-- Column 3 -->
+              <div class="column3">
+                  <div class="input-block">
+                      <label for="signup-vemail">E-mail<span class="required">*</span></label>
+                      <input id="signup-vemail" type="email" required>
+                  </div>
+                  <div class="input-block">
+                    <label for="signup-vusername">Username<span class="required">*</span></label>
+                    <input id="signup-vusername" type="text" placeholder="Eg; 134RajMalhotra" required>
+                    <div class="validation-message" id="vuser-validation-message"></div>
+                </div>
+              </div>
+              <p class="note">(Note: Choose a username that is concise and easy to remember. <br>This will serve as your login credential and will also help others find you easily)</p>
+              <!-- Column 4 -->
+              <div class="column4">
+                  <div class="input-block">
+                      <label for="signup-vpassword">Password<span class="required">*</span></label>
+                      <input id="signup-vpassword" type="password" required>
+                      <div class="validation-message" id="vpassword-validation-message"></div>
+                  </div>
+                  <div class="input-block">
+                      <label for="signup-vconfpassword">Confirm Password<span class="required">*</span></label>
+                      <input id="signup-vconfpassword" type="password" required>
+                      <div class="validation-message" id="vconfirmPassword-validation-message"></div>
+                  </div>
+              </div>    
+          </div>
+          <button type="submit" class="btn-login">Register</button>
+          <p class="note"><span>Already registered? </span>
+            <b onclick="toggle()" class="pointer">Sign in here</b></p>
+          </fieldset>
+          
+
+        </form>
+      </div>
+
+
+      <div class="form-wrapper">
+        <button type="button" class="switcher switcher-signup">
+          Organization
+          <span class="underline"></span>
+        </button>
+        <form class="form form-signup">
+            <fieldset>
+                <legend>Please, enter your email, password and password confirmation for sign up.</legend>
+            <div class="column-container">
+                <!-- Column 1 -->
+                <div class="column1">
+                        <div class="input-block">
+                        <label for="signup-orgname">Organization name<span class="required">*</span></label>
+                        <input id="signup-orgname" type="text" required>
+                        <div class="validation-message" id="orgname-validation-message"></div>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-ngoid">NGO Unique ID<span class="required">*</span></label>
+                            <input id="signup-ngoid" type="text" required>
+                            <div class="validation-message" id="ngoid-validation-message"></div>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-inception">Inception Year<span class="required">*</span></label>
+                            <input id="signup-inception" type="text" required>
+                            <div class="validation-message" id="inception-validation-message"></div>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                <div class="column2">
+                        <div class="input-block">
+                            <label for="signup-orgcontact">Contact<span class="required">*</span></label>
+                            <input id="signup-orgcontact" type="text" required>
+                            <div class="validation-message" id="contact-validation-message"></div>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-address">Address<span class="required">*</span></label>
+                            <input id="signup-address" type="text" required>
+                        </div>
+                        <div class="input-block">
+                            <label for="signup-orgcity">City<span class="required">*</span></label>
+                            <input id="signup-orgcity" type="text" required>
+                            <div class="validation-message" id="orgcity-validation-message"></div>
+                        </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="column3">
+                    <div class="input-block">
+                        <label for="signup-orgemail">E-mail<span class="required">*</span></label>
+                        <input id="signup-orgemail" type="email" required>
+                    </div>
+                    
+                  <div class="input-block">
+                      <label for="signup-orgusername">Username<span class="required">*</span></label>
+                      <input id="signup-orgusername" type="text" placeholder="Eg; Smile_fndt" required>
+                      <div class="validation-message" id="orguser-validation-message"></div>
+                  </div>
+                </div>
+                <p class="note">(Note: Choose a username that is concise and easy to remember. <br>This will serve as your login credential and will also help others find you easily)</p>
+                  <!-- Column 4 -->
+                <div class="column4">
+                    <div class="input-block">
+                        <label for="signup-orgpassword">Password<span class="required">*</span></label>
+                        <input id="signup-orgpassword" type="password" required>
+                        <div class="validation-message" id="password-validation-message"></div>
+                    </div>
+                    <div class="input-block">
+                        <label for="signup-orgconfpassword">Confirm Password<span class="required">*</span></label>
+                        <input id="signup-orgconfpassword" type="password" required>
+                        <div class="validation-message" id="confirmPassword-validation-message"></div>
+                    </div>
+                </div>    
+            </div>
+        
+            <button type="submit" class="btn-signup">Register</button>
+            <p class="note"><span>Already registered? </span>
+              <b onclick="toggle()" class="pointer">Sign in here</b></p>
+        </fieldset>
+        
+        </form>
+        
+      </div>
+    </div>
+  </section>
+      
+  <script src="signup.js"></script>
+</body>
+</html>
