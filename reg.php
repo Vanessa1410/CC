@@ -662,11 +662,11 @@ select::-ms-expand {
                     </div>
                 </div>    
             </div>
-        
+            </fieldset>
             <button type="submit" class="btn-signup">Register</button>
             <p class="note"><span>Already registered? </span>
           <b onclick="toggle()" class="pointer">Sign in here</b></p>
-        </fieldset>
+        
        
         </form>
       </div>
