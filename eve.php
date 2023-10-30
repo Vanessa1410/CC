@@ -143,9 +143,7 @@ a{
     padding: 0 15px;
 }
 
-.navbar-left{
-    
-}
+
 
 .search-box i{
     width: 14px;
@@ -262,6 +260,14 @@ tr.event-row {
     background-color: #fff;
 }
 
+.search-box input{
+     width: 100%;
+     background: transparent;
+     padding: 8px;
+     outline: none;
+     border: 0;
+ }
+
 
 
     </style>
@@ -273,17 +279,21 @@ tr.event-row {
         <!-- <div class="navbar-left"> -->
             <!-- <a href="index.html" class="logo"><img src=""></a>
          -->
-            <div class="search-box">
+            <div class="search-box" style="padding: 0px 3px 0px 3px;">
+                                           
+                                            
+            <!-- style="padding: 0px 3px 0px 3px; -->
                 <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="text" placeholder="Search">
+                <input type="text" style="margin-bottom: 3px;" placeholder="Search">
+                <!-- style="margin-bottom: 3px;" -->
             </div>
         
         <!-- </div> -->
         <div class="navbar-center">
             <ul>
                 <li><a href="index.php"><i class="fa-solid fa-house"></i><span>Home</span></a></li>
-                <li><a href="eve.php"><i class="fa-solid fa-list-ul"></i><span>Events</span></a></li>
-                <li><a href="calendar.php" class="active-link"><i class="fa-regular fa-calendar-days"></i></i><span>Calendar</span></a></li>
+                <li><a href="eve.php" class="active-link"><i class="fa-solid fa-list-ul"></i><span>Events</span></a></li>
+                <li><a href="calendar.php"><i class="fa-regular fa-calendar-days"></i></i><span>Calendar</span></a></li>
                 <li><a href="aboutus.php"><i class="fa-solid fa-user-group"></i><span>About us</span></a></li>
                 <li><a href="contactus.php"><i class="fa-solid fa-globe"></i><span>Contact us</span></a></li>
                 <li><a href="reg.php"><i class="fa-solid fa-right-from-bracket"></i><span>Logout</span></a></li>
